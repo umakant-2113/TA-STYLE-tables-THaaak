@@ -220,16 +220,15 @@ header {
 /* hero section start  */
 
 .hero-section {
+  position: relative;
 }
-figure {
-  width: 100%;
-  height: 100%;
-  content: " ";
-  z-index: 2;
-  backface-visibility: hidden;
-  background: #3452ff;
-  background: linear-gradient(90deg, rgb(63, 61, 61), rgb(68, 64, 64));
-  opacity: 0.8;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(35, 45, 056, 0.8);
 }
 
 .hero {
@@ -246,6 +245,7 @@ figure {
 }
 video {
   width: 100%;
+  /* height: 100vh; */
 }
 
 .hero-h1 {
@@ -482,19 +482,36 @@ td {
   width: 45%;
   padding: 15px 8px;
   margin: 1.5rem 1.5rem 1.5rem 0;
-  border: 1px solid blanchedalmond;
+  border: 1px solid grey;
 }
 .form-control1 {
   width: 95%;
   padding: 15px 8px;
   margin: 1.5rem 1.5rem 1.5rem 0;
-  border: 1px solid blanchedalmond;
+  border: 1px solid grey;
+}
+input {
+  background-color: transparent;
+  border: 0px solid;
+  height: 20px;
+  width: 160px;
+  color: #ccc;
+}
+textarea:focus,
+input:focus {
+  outline: none;
 }
 textarea {
   column-rule: grey;
-  border: 1px solid blanchedalmond;
+  border: 1px solid grey;
 }
 .form-btn {
-  color: aliceblue;
+  background-color: rgb(227, 82, 58);
   margin: 1rem 0;
+  /* text-align: center; */
+  color: aliceblue;
+  height: 30px;
+  width: 100px;
+  /* padding: 15px; */
+  /* padding: 10px 2px; */
 }
